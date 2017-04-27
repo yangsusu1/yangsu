@@ -1,0 +1,33 @@
+import java.util.Scanner;
+
+/*
+ * 实现简单加减乘除的计算器。具体功能如下。
+（1）	定义两个float型变量。并输入值。
+（2）	定义一个char 型变量。赋予’+’或’-’或’*’或‘/’字符。
+（3）	使用switch……case语句，判断计算器做加减乘除哪种操作。并输出计算结果。
+
+   */
+public class Demo1 {
+	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+		System.out.println("请输入第一个数:");
+		float a=sc.nextFloat();
+		System.out.println("请输入第二个数:");
+		float b=sc.nextFloat();
+		System.out.println("请输入您的操作:");
+		String fu=sc.next();
+		switch(fu){
+		case "+":
+			System.out.println("两数之和是:"+(a+b));
+			break;
+		case "-":
+			System.out.println("两数之差是:"+(a-b));
+			break;
+		case "*":
+			System.out.println("两数之积是:"+(a*b));
+			break;
+		case "/":
+			System.out.println("两数之商是:"+(a/b));
+		}
+	}
+}
